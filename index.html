@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Photography</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css?_v=20220912224558"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css?_v=20220912224558" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css?_v=20220912224558" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20220912224558">
 </head>
 
 <body>
@@ -111,7 +111,7 @@
 
             <a href="img/g1.jpg" data-fancybox="gallery" data-caption="">
               <div class="photo-table__item">
-                <img src="img/g1.jpg" alt="">
+                <picture><source srcset="img/g1.webp" type="image/webp"><img src="img/g1.jpg" alt=""></picture>
                 <div class="overlay-box">
                   <span>
                     <h5 class="overlay-box__title">Portrait Photography</h5>
@@ -123,7 +123,7 @@
 
             <a class="central" href="img/g3.jpg" data-fancybox="gallery" data-caption="">
               <div class="photo-table__item">
-                <img src="img/g3.jpg" alt="">
+                <picture><source srcset="img/g3.webp" type="image/webp"><img src="img/g3.jpg" alt=""></picture>
                 <div class="overlay-box">
                   <span>
                     <h5 class="overlay-box__title">Portrait Photography</h5>
@@ -135,7 +135,7 @@
 
             <a href="img/g2.jpg" data-fancybox="gallery" data-caption="">
               <div class="photo-table__item">
-                <img src="img/g2.jpg" alt="">
+                <picture><source srcset="img/g2.webp" type="image/webp"><img src="img/g2.jpg" alt=""></picture>
                 <div class="overlay-box">
                   <span>
                     <h5 class="overlay-box__title">Portrait Photography</h5>
@@ -148,7 +148,7 @@
 
             <a href="img/g4.jpg" data-fancybox="gallery" data-caption="">
               <div class="photo-table__item">
-                <img src="img/g4.jpg" alt="">
+                <picture><source srcset="img/g4.webp" type="image/webp"><img src="img/g4.jpg" alt=""></picture>
                 <div class="overlay-box">
                   <span>
                     <h5 class="overlay-box__title">Portrait Photography</h5>
@@ -159,7 +159,7 @@
 
             <a href="img/g5.jpg" data-fancybox="gallery" data-caption="">
               <div class="photo-table__item">
-                <img src="img/g5.jpg" alt="">
+                <picture><source srcset="img/g5.webp" type="image/webp"><img src="img/g5.jpg" alt=""></picture>
                 <div class="overlay-box">
                   <span>
                     <h5 class="overlay-box__title">Portrait Photography</h5>
@@ -252,33 +252,45 @@
                 <li>
                   <p class="sign" style="--w:80"><span class="sign__title">Photography</span><span
                       class="detail">80%</span></p>
-                  <div class="progressbar" style="--w:80; --from:rgb(0, 255, 226);--to:rgb(182, 255, 251);"></div>
-                  <div class="porgressbar-circle" style="--from:rgb(0, 255, 226);--to:rgb(182, 255, 251);"><span
-                      class="center-radius"></span></div>
+                  <div class="wrapper-progressbar">
+                    <div class="progressbar" style="--w:80; --from:rgb(0, 255, 226);--to:rgb(182, 255, 251);">
+                    </div>
+                    <div class="porgressbar-circle" style="--from:rgb(0, 255, 226);--to:rgb(182, 255, 251);">
+                      <span class="center-radius"></span></div>
+                  </div>
                 </li>
 
                 <li>
                   <p class="sign" style="--w:92"><span class="sign__title">Creativity</span><span
                       class="detail">95%</span></p>
-                  <div class="progressbar" style="--w:92; --from:rgb(255, 187, 0);--to:rgb(251, 255, 0);"></div>
-                  <div class="porgressbar-circle" style="--from:rgb(255, 187, 0);--to:rgb(251, 255, 0);"><span
-                      class="center-radius"></span></div>
+                  <div class="wrapper-progressbar">
+                    <div class="progressbar" style="--w:92; --from:rgb(255, 187, 0);--to:rgb(251, 255, 0);">
+                    </div>
+                    <div class="porgressbar-circle" style="--from:rgb(255, 187, 0);--to:rgb(251, 255, 0);">
+                      <span class="center-radius"></span></div>
+                  </div>
+
                 </li>
 
                 <li>
                   <p class="sign" style="--w:60"><span class="sign__title">New Stills</span><span
                       class="detail">60%</span></p>
-                  <div class="progressbar" style="--w:60; --from:rgb(124, 8, 114);--to:rgb(204, 0, 255);"></div>
-                  <div class="porgressbar-circle" style="--from:rgb(124, 8, 114);--to:rgb(204, 0, 255);"><span
-                      class="center-radius"></span></div>
+                  <div class="wrapper-progressbar">
+                    <div class="progressbar" style="--w:60; --from:rgb(124, 8, 114);--to:rgb(204, 0, 255);">
+                    </div>
+                    <div class="porgressbar-circle" style="--from:rgb(124, 8, 114);--to:rgb(204, 0, 255);">
+                      <span class="center-radius"></span></div>
+                  </div>
                 </li>
 
                 <li>
                   <p class="sign" style="--w:85"><span class="sign__title">Retouching</span><span
                       class="detail">85%</span></p>
-                  <div class="progressbar" style="--w:85; --from:#e5529a;--to:#e77654;"></div>
-                  <div class="porgressbar-circle" style="--from:#e5529a;--to:#e77654;"><span
-                      class="center-radius"></span></div>
+                  <div class="wrapper-progressbar">
+                    <div class="progressbar" style="--w:85; --from:#e5529a;--to:#e77654;"></div>
+                    <div class="porgressbar-circle" style="--from:#e5529a;--to:#e77654;"><span
+                        class="center-radius"></span></div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -297,7 +309,7 @@
 
         <div class="team">
           <div class="item center">
-            <img class="avatar" src="img/testi1.jpg" alt="">
+            <picture><source srcset="img/testi1.webp" type="image/webp"><img class="avatar" src="img/testi1.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -305,21 +317,21 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi2.jpg" alt="">
+            <picture><source srcset="img/testi2.webp" type="image/webp"><img class="avatar" src="img/testi2.jpg" alt=""></picture>
             <h5 class="name">Jenna Jn</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi3.jpg" alt="">
+            <picture><source srcset="img/testi3.webp" type="image/webp"><img class="avatar" src="img/testi3.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ggggg
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi4.jpg" alt="">
+            <picture><source srcset="img/testi4.webp" type="image/webp"><img class="avatar" src="img/testi4.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -327,7 +339,7 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi5.jpg" alt="">
+            <picture><source srcset="img/testi5.webp" type="image/webp"><img class="avatar" src="img/testi5.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -335,7 +347,7 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi6.jpg" alt="">
+            <picture><source srcset="img/testi6.webp" type="image/webp"><img class="avatar" src="img/testi6.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -343,7 +355,7 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           <div class="item side">
-            <img class="avatar" src="img/testi7.jpg" alt="">
+            <picture><source srcset="img/testi7.webp" type="image/webp"><img class="avatar" src="img/testi7.jpg" alt=""></picture>
             <h5 class="name">Jenna John</h5>
             <h5 class="role">subtitle Goes here</h5>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -369,7 +381,7 @@
           </div>
           <div class="blog-list">
             <div class="blog-list__item item">
-              <a href=""><img src="img/blog-page6-1536x823.jpg" alt="">
+              <a href=""><picture><source srcset="img/blog-page6-1536x823.webp" type="image/webp"><img src="img/blog-page6-1536x823.jpg" alt=""></picture>
               </a>
               <div class="item__info-wrapper">
                 <div class="item__short-info">
@@ -384,7 +396,7 @@
 
 
             <div class="blog-list__item item">
-              <a href=""><img src="img/blog-page5-1536x823.jpg" alt="">
+              <a href=""><picture><source srcset="img/blog-page5-1536x823.webp" type="image/webp"><img src="img/blog-page5-1536x823.jpg" alt=""></picture>
               </a>
               <div class="item__info-wrapper">
                 <div class="item__short-info">
@@ -399,7 +411,7 @@
 
 
             <div class="blog-list__item item">
-              <a href=""><img src="img/blog-page4-1536x823.jpg" alt="">
+              <a href=""><picture><source srcset="img/blog-page4-1536x823.webp" type="image/webp"><img src="img/blog-page4-1536x823.jpg" alt=""></picture>
               </a>
               <div class="item__info-wrapper">
                 <div class="item__short-info">
@@ -411,11 +423,13 @@
 
               </div>
             </div>
-           
+
           </div>
         </div>
 
       </section>
+
+
 
     </main>
     <footer class="footer">
@@ -451,7 +465,7 @@
                 <input type="email" name="email" placeholder="Your email"><button type="submit">
                   <i class="fa-solid fa-paper-plane"></i></button>
               </div>
-              
+
               <p class="info">Subscribe to our mailing list and get updates to your email inbox.</p>
             </form>
           </div>
@@ -467,17 +481,19 @@
     </footer>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220912224558"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220912224558"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js?_v=20220912224558"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js?_v=20220912224558"
     integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
   </script>
-  <script src="js/app.min.js"></script>
+  <script src="files/header-slider.js?_v=20220912224558"></script>
+  <script src="files/testimonials.js?_v=20220912224558"></script>
+  <script src="js/app.min.js?_v=20220912224558"></script>
 </body>
 
 </html>
